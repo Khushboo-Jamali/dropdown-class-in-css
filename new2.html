@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+    .main > ul {
+      background-color: gainsboro;
+    }
+    .main ul {
+      position: relative;
+      float: left;
+    }
+
+    .main ul a {
+      color: black;
+      font-size: 15px;
+      line-height: 40px;
+      padding: 0 15px;
+      font-weight: bold;
+      display: block;
+    }
+    .main ul li {
+      float: left;
+      position: relative;
+    }
+
+    .main ul li:hover {
+      background-color: #2ecc71;
+    }
+
+    .main ul ul {
+      position: absolute;
+      background-color: #27ae60;
+      top: 100%;
+      left: 0;
+      display: none;
+    }
+    .main ul ul li {
+      float: none;
+      width: 200px;
+    }
+
+    .main ul ul ul {
+      top: 0px;
+      left: 10%;
+    }
+    .main ul li:hover > ul {
+      display: block;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <ul>
+        <li>
+          <a href="">home1</a>
+          <ul>
+            <li>
+              <a href="">home1</a>
+            </li>
+            <li><a href="">home1</a></li>
+            <li><a href="">home1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="">home2</a>
+
+          <ul>
+            <li><a href="">home1</a></li>
+            <li><a href="">home1</a></li>
+            <li><a href="">home1</a></li>
+          </ul>
+        </li>
+        <li><a href="">home3</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
